@@ -1,0 +1,21 @@
+{
+  "fields": {
+    "name": {
+      "type": "String",
+      "required": true
+    },
+    "age": {
+      "type": "Number",
+      "required": false
+    },
+    "colour": {
+      "type": "String"
+    }
+  },
+  "settings": {
+    "authenticate": true,
+    "cache": true,
+    "count": 40,
+    "description": ""
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "fields": {
+    "title": {
+      "type": "String",
+      "label": "name",
+      "example": "War and Peace",
+      "comments": "This is the book's title",
+      "required": true
+    },
+    "datePublished": {
+      "type": "DateTime",
+      "required": true
+    },
+    "reviews": {
+      "type": "Number",
+      "label": "Reviews",
+      "required": false
+    },
+    "edition": {
+      "type": "Number",
+      "required": false
+    },
+    "authorId": {
+      "type": "String",
+      "label": "author",
+      "example": "b8b285ae",
+      "comments": "This is the _id of the book's author",
+      "validation": {
+        "regex": {
+          "pattern": "^[0-9a-f]{8}$"
+        }
+      },
+      "required": true
+    },
+    "author": {
+      "type": "Mixed",
+      "label": "author",
+      "required": false
+    },
+    "authors": {
+      "type": "Mixed",
+      "required": false
+    }
+  },
+  "settings": {
+    "authenticate": true,
+    "cache": true,
+    "count": 40,
+    "description": "Allows for a Markdown **formatted** description explaining the purpose of this **collection**.",
+    "sort": {
+      "datePublished": 1
+    },
+    "storeRevisions": true,
+    "revisionCollection": "booksHistory",
+    "index": [
+      {
+        "keys": {
+          "title": 1
+        },
+        "options": {
+          "primary": true,
+          "type": "partition"
+        }
+      }
+    ]
+  }
+}
