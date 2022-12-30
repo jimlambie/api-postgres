@@ -19,7 +19,7 @@
   "devDependencies": {
     "colors": "^1.1.2",
     "env-test": "^1.0.0",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "should": "~4.0.4",
     "sinon": "~1.17.6"
   },
