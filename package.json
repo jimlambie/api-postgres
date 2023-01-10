@@ -10,7 +10,7 @@
   "license": "Unlicense",
   "dependencies": {
     "@dadi/metadata": "^2.0.0",
-    "convict": "~4.0.0",
+    "convict": "~6.2.4",
     "debug": "~2.6.0",
     "mkdirp": "~0.5.1",
     "pg": "^7.6.1",
